@@ -1,0 +1,114 @@
+
+**** 11/01/21 20:12:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * H:\Circuit Design\Schematic1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Nov 01 20:12:31 2021
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+R_R2         0 $N_0001  1k  
+R_R4         0 $N_0002  1k  
+R_R6         0 $N_0003  1k  
+V_V1         $N_0004 0 12V
+R_R1         $N_0004 $N_0001  10k  
+R_R3         $N_0001 $N_0002  10k  
+R_R5         $N_0002 $N_0003  10k  
+
+**** RESUMING Schematic1.cir ****
+.INC "Schematic1.als"
+
+
+
+**** INCLUDING Schematic1.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R2            R2(1=0 2=$N_0001 )
+R_R4            R4(1=0 2=$N_0002 )
+R_R6            R6(1=0 2=$N_0003 )
+V_V1            V1(+=$N_0004 -=0 )
+R_R1            R1(1=$N_0004 2=$N_0001 )
+R_R3            R3(1=$N_0001 2=$N_0002 )
+R_R5            R5(1=$N_0002 2=$N_0003 )
+.ENDALIASES
+
+
+**** RESUMING Schematic1.cir ****
+.probe
+
+
+.END
+
+**** 11/01/21 20:12:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * H:\Circuit Design\Schematic1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.0070                   ($N_0002)     .0846                       
+
+($N_0003)     .0077                   ($N_0004)   12.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.099E-03
+
+    TOTAL POWER DISSIPATION   1.32E-02  WATTS
+
+
+**** 11/01/21 20:12:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * H:\Circuit Design\Schematic1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+
