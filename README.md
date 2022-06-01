@@ -1,3 +1,3 @@
-# CSE250 - 
+# CSE250 - Circuits and Electronics 
 
-Lab solutions of CSE250  course of [BRAC University,](https://www.bracu.ac.bd/) Dhaka, Bangladesh.
+Lab solutions of CSE250 Circuits and Electronics course of [BRAC University,](https://www.bracu.ac.bd/) Dhaka, Bangladesh.
